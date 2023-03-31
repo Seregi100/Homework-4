@@ -28,7 +28,7 @@ public class Homework4 {
                 String brand = scan.next();
                 int releaseYear = scan.nextInt();
                 String regNumber = scan.next();
-                if (releaseYear<1886 && releaseYear>2023){  //Почему-то не работает проверка условия
+                if (releaseYear<1886 || releaseYear>2023){
                     System.out.println("Неправильный год, повторите попытку");
                 }else{
                     Car newCar = new Car(brand, releaseYear, regNumber);
